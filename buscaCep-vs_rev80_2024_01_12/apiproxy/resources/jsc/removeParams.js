@@ -10,6 +10,7 @@ delete resLog.ibge
 delete resLog.siafi
 delete resLog.gia
 delete resLog.complemento
+delete resLog.ddd
 
 context.setVariable("resLog", JSON.stringify(resLog));
 

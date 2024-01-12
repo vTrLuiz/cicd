@@ -11,3 +11,4 @@ steps:
 
       # openapi deployment #2
       apigeecli apis create bundle  -f buscaCep-vs_rev80_2024_01_12/apiproxy  -n buscaCep-vs
+      apigeecli apis deploy -n buscaCep-vs -e defaultd-dev -r
