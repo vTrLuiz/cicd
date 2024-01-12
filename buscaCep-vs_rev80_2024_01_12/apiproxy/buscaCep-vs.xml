@@ -1,0 +1,20 @@
+<APIProxy revision="80" name="buscaCep-vs">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1704719904542</CreatedAt>
+    <LastModifiedAt>1704719904542</LastModifiedAt>
+    <BasePaths>/buscacep-vs</BasePaths>
+    <Policies>
+        <Policy>Js-removeParams</Policy>
+        <Policy>QA-chamadas</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://removeParams.js</Resource>
+    </Resources>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

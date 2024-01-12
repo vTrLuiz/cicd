@@ -1,0 +1,13 @@
+steps:
+- id: 'Run apigeecli commands'
+  name: ghcr.io/apigee/apigeecli:latest
+  entrypoint: 'sh'
+  args:
+    - -c
+    - |
+      #setup preferences
+      apigeecli prefs set --nocheck=true -o apigee-prd1
+      apigeecli token cache --metadata-token
+
+      # openapi deployment #2
+      apigeecli apis create bundle  -f buscaCep-vs_rev80_2024_01_12\apiproxy  -n buscaCep-vs
