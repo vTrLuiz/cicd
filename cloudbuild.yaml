@@ -6,7 +6,7 @@ steps:
     - -c
     - |
       #setup preferences
-      apigeecli prefs set --nocheck=true -o apigee-prd1
+      apigeecli prefs set --nocheck=true -o interno-ipnet-dev
       apigeecli token cache --metadata-token
 
       # openapi deployment #2
